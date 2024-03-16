@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.controllerPrincipal">
+   <children>
+      <ImageView fx:id="mainScreen" fitHeight="612.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/mainScreen.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="textBox" layoutX="152.0" layoutY="89.0" prefHeight="158.0" prefWidth="167.0" promptText="Digite aqui!" style="-fx-border-color: #395e86; -fx-border-width: 4;" wrapText="true">
+         <font>
+            <Font name="Microsoft Tai Le" size="12.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="finalText" editable="false" layoutX="492.0" layoutY="107.0" prefHeight="158.0" prefWidth="167.0" promptText="Aguardando Mensagem!" style="-fx-border-color: #395e86; -fx-border-width: 4;" wrapText="true">
+         <font>
+            <Font name="Microsoft Tai Le" size="12.0" />
+         </font>
+      </TextArea>
+      <ImageView fx:id="signalBaixo1" fitHeight="4.0" fitWidth="43.0" layoutX="232.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalBaixo2" fitHeight="4.0" fitWidth="43.0" layoutX="274.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalBaixo3" fitHeight="4.0" fitWidth="43.0" layoutX="316.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalBaixo4" fitHeight="4.0" fitWidth="43.0" layoutX="358.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalBaixo5" fitHeight="4.0" fitWidth="43.0" layoutX="400.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalBaixo6" fitHeight="4.0" fitWidth="43.0" layoutX="442.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalBaixo7" fitHeight="4.0" fitWidth="43.0" layoutX="484.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalBaixo8" fitHeight="4.0" fitWidth="54.0" layoutX="526.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalPe1" fitHeight="43.0" fitWidth="4.0" layoutX="272.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalPe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalPe2" fitHeight="43.0" fitWidth="4.0" layoutX="314.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalPe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalPe3" fitHeight="43.0" fitWidth="4.0" layoutX="356.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalPe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalPe4" fitHeight="43.0" fitWidth="4.0" layoutX="398.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalPe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalPe5" fitHeight="43.0" fitWidth="4.0" layoutX="441.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalPe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalPe6" fitHeight="43.0" fitWidth="4.0" layoutX="483.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalPe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalPe7" fitHeight="43.0" fitWidth="4.0" layoutX="525.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalPe.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalPe8" fitHeight="43.0" fitWidth="4.0" layoutX="565.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <Slider fx:id="waveSlider" layoutX="360.0" layoutY="259.0" max="400.0" min="20.0" minorTickCount="10" prefHeight="23.0" prefWidth="81.0" rotate="180.0" value="100.0" />
+      <ImageView fx:id="signalAlto1" fitHeight="4.0" fitWidth="43.0" layoutX="232.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalAlto2" fitHeight="4.0" fitWidth="43.0" layoutX="274.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalAlto3" fitHeight="4.0" fitWidth="43.0" layoutX="316.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalAlto4" fitHeight="4.0" fitWidth="43.0" layoutX="358.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalAlto5" fitHeight="4.0" fitWidth="43.0" layoutX="400.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalAlto6" fitHeight="4.0" fitWidth="43.0" layoutX="442.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalAlto7" fitHeight="4.0" fitWidth="43.0" layoutX="484.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="signalAlto8" fitHeight="4.0" fitWidth="54.0" layoutX="526.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/signalBaixo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manchester1" fitHeight="44.0" fitWidth="43.0" layoutX="232.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manchester2" fitHeight="44.0" fitWidth="43.0" layoutX="274.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </ImageView>
+      <ImageView fx:id="manchester3" fitHeight="44.0" fitWidth="43.0" layoutX="316.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manchester4" fitHeight="44.0" fitWidth="43.0" layoutX="358.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manchester5" fitHeight="44.0" fitWidth="43.0" layoutX="400.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manchester6" fitHeight="44.0" fitWidth="43.0" layoutX="442.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manchester7" fitHeight="44.0" fitWidth="43.0" layoutX="484.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manchester8" fitHeight="44.0" fitWidth="43.0" layoutX="526.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manchester9" fitHeight="44.0" fitWidth="43.0" layoutX="233.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manchester10" fitHeight="44.0" fitWidth="43.0" layoutX="275.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manchester11" fitHeight="44.0" fitWidth="43.0" layoutX="316.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manchester12" fitHeight="44.0" fitWidth="43.0" layoutX="358.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manchester13" fitHeight="44.0" fitWidth="43.0" layoutX="401.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manchester14" fitHeight="44.0" fitWidth="43.0" layoutX="443.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manchester15" fitHeight="44.0" fitWidth="43.0" layoutX="485.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="manchester16" fitHeight="44.0" fitWidth="43.0" layoutX="527.0" layoutY="336.0" pickOnBounds="true" preserveRatio="true" scaleX="-1.0" visible="false">
+         <image>
+            <Image url="@../assets/manchesterCode.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="buttonSend" fitHeight="23.0" fitWidth="83.0" layoutX="195.0" layoutY="260.0" onMouseClicked="#clickButtonSend" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/sendButton.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="buttonCodif" fitHeight="40.0" fitWidth="102.0" layoutX="350.0" layoutY="177.0" onMouseClicked="#alterarCodificacao" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/buttonCodificacao.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TextArea fx:id="binaryArea" editable="false" layoutX="260.0" layoutY="411.0" prefHeight="56.0" prefWidth="280.0" style="-fx-border-color: #395e86; -fx-border-width: 2;" wrapText="true">
+         <font>
+            <Font name="Microsoft Tai Le" size="12.0" />
+         </font>
+      </TextArea>
+      <TextArea fx:id="enquadArea" editable="false" layoutX="260.0" layoutY="500.0" prefHeight="56.0" prefWidth="280.0" style="-fx-border-color: #395e86; -fx-border-width: 2;" wrapText="true">
+         <font>
+            <Font name="Microsoft Tai Le" size="12.0" />
+         </font>
+      </TextArea>
+      <ImageView fx:id="startScreen" fitHeight="612.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/startScreen.png" />
+         </image>
+      </ImageView>
+      <ChoiceBox fx:id="boxSelect" centerShape="false" layoutX="320.0" layoutY="249.0" prefHeight="31.0" prefWidth="161.0" style="-fx-background-color: #7da3f4; -fx-border-color: white; -fx-border-width: 3;" />
+      <Button fx:id="buttonSelect" layoutX="306.0" layoutY="532.0" mnemonicParsing="false" onMouseClicked="#clickSelected" prefHeight="38.0" prefWidth="191.0" style="-fx-background-color: #0e1c42; -fx-border-color: white; -fx-border-width: 3;" text="Selecionar" textFill="WHITE">
+         <font>
+            <Font name="Microsoft New Tai Lue Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ChoiceBox fx:id="boxSelect2" centerShape="false" layoutX="309.0" layoutY="349.0" prefHeight="31.0" prefWidth="184.0" style="-fx-background-color: #7da3f4; -fx-border-color: white; -fx-border-width: 3;" />
+      <ChoiceBox fx:id="boxSelectControle" centerShape="false" layoutX="188.0" layoutY="452.0" prefHeight="31.0" prefWidth="184.0" style="-fx-background-color: #7da3f4; -fx-border-color: white; -fx-border-width: 3;" />
+      <ChoiceBox fx:id="boxSelectTaxa" centerShape="false" layoutX="426.0" layoutY="452.0" prefHeight="31.0" prefWidth="184.0" style="-fx-background-color: #7da3f4; -fx-border-color: white; -fx-border-width: 3;" />
+   </children>
+</AnchorPane>
