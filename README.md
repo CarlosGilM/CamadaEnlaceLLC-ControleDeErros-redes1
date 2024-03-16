@@ -6,8 +6,10 @@ O trabalho envolve uma simulação da Camada Enlace de Dados do Modelo OSI. <br/
 NOTA DO TRABALHO (100 / 100)
 
  # Execução
- ###Algumas Informações IMPORTANTES da execução são exibidas no terminal.
+ ### Algumas Informações IMPORTANTES da execução são exibidas no terminal.
+ 
 <img src="assets/execucaoEnlace2.gif">
+<br/>
 Execução parcial do programa.
 
 # Autores
